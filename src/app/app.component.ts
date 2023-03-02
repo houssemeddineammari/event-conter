@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'coding-game';
+  public title = 'coding-game';
+  public tickOutput!: string
 
   handleTick(val: any) {
+    this.tickOutput = '';
+    this.tickOutput = val;
     console.log('-----TIK-------');
     console.log(val);
   }

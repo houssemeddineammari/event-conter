@@ -18,7 +18,7 @@ export class CounterComponent implements OnInit {
   @Input() message: string = '';
   @Output() tick: EventEmitter<string> = new EventEmitter();
 
-  intervalValue: number = 0;
+  intervalValue!: number;
   intervalId: any = null;
 
   ngOnInit() {
@@ -26,7 +26,6 @@ export class CounterComponent implements OnInit {
 
   onIntervalChange() {
     this.clearTimer();
-    this.startTimer();
   }
 
   setInterval() {

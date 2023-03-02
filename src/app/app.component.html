@@ -1,2 +1,4 @@
-<counter-component [message]="'Message from the Parent'" (tick)="handleTick($event)"></counter-component>
+<counter-component [message]="'Message from the parent'" (tick)="handleTick($event)"></counter-component>
+<div style="text-align: center; padding-top: 100px; height: 100px; background: cadetblue; border-radius: 5px;">{{tickOutput}}</div>
+
 <router-outlet></router-outlet>
