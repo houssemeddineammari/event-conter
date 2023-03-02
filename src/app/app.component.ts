@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'coding-game';
+
+  handleTick(val: any) {
+    console.log('-----TIK-------');
+    console.log(val);
+  }
 }
